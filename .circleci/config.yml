@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: debian:stretch
     steps:
+      - run:
+          name: Install system dependencies
+          command: set -xe && apt-get -y update && apt-get install --no-install-recommends -y git openssh-client
       - checkout
       - run:
           name: Greeting
