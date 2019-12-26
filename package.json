@@ -1,0 +1,5 @@
+{
+  "name": "circleci-hands-on",
+  "private": true,
+  "dependencies": {}
+}
