@@ -13,9 +13,9 @@ jobs: # a collection of steps
           RAILS_ENV: test
       - image:  circleci/mysql:5.6.35 # database image
         environment: # environment variables for database
-          POSTGRES_USER: circleci-demo-ruby
-          POSTGRES_DB: rails_blog
-          POSTGRES_PASSWORD: ""
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_TEST_DATABASE: circle_test
+          RAILS_ENV: test
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
 
